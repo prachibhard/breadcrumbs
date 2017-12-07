@@ -230,6 +230,8 @@ form {
   padding: 1em;
   bottom: 0%;
   right: 0%;
+  z-index: 2;
+  color: #000000;
 }
 
 
