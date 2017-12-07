@@ -52,47 +52,152 @@ table {
 
 /* BEGIN YOUR STYLES HERE */
 
-body {
+
+/* Start your base/mobile styles here */
+
+html, body {
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 16px;
   line-height: 1.5;
   background-color: #708090;
+  /*slategrey*/
   color: #FFFFFF;
+  font-family: 'Droid Serif', serif;
 }
 
 .section {
-  padding-top: 30%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5%;
   min-height: 100vh;
 }
 
-header {
+#header {
+  padding-top: 20%;
   text-align: center;
   color: #ffffff;
 }
 
-h1 {
-  text-shadow: 0 0 3px #3CB371, 0 0 5px #000000;
+#title {
+  text-shadow: 0 0 60px #3CB371, 0 0 60px #000000;
 }
+
+#byline {
+  padding: 5%;
+}
+
+#byline a {
+  color: #3CB371;
+  /*mediumseagreen*/
+}
+
+.tableofcontents {
+  margin: 5%;
+  padding: 1em;
+  border: 3px solid #3CB371;
+  border-radius: 25px;
+  font-size: .9em;
+}
+
+.nav {
+  width: 60%;
+  height: 2em;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.active {
+  display: block;
+}
+
+
+/* Dropdown Button */
+
+.goto {
+  width: 30%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1em;
+  float: right;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown {
+  display: none;
+  background-color: #708090;
+  z-index: 2;
+  float: right;
+  border: 2px solid #000000;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown a {
+  padding: 2% 6%;
+  text-decoration: none;
+  display: block;
+  border: 1px solid #000000;
+}
+
+
+/*section headlines*/
 
 h2 {
   text-align: center;
+  text-shadow: 0 0 10px #3CB371, 0 0 10px #000000;
 }
+
+
+/*section subheads*/
 
 h4 {
   style: bold;
 }
 
-h6 {
-  padding: 5%;
+
+/* unvisited link */
+
+a:link {
+  color: #ffffff;
+}
+
+
+/* visited link */
+
+a:visited {
   color: #3CB371;
 }
 
+
+/* mouse over link */
+
+a:hover {
+  color: #3CB371;
+  text-shadow: 2px 2px 8px #ffffff;
+}
+
+
+/* selected link */
+
+a:active {
+  color: #ffffff;
+}
+
 form {
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: .5em;
-  background-color: #ffffff;
-  color: #000000;
+  margin: 5%;
+  padding: 1em;
+  background-color: #3CB371;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: .9em;
 }
 
 .privacybar {
@@ -125,14 +230,6 @@ form {
   padding: 1em;
   bottom: 0%;
   right: 0%;
-}
-
-
-/* Start your base/mobile styles here */
-
-html, body {
-  /* Sets default font-size to 16px, ensuring 1em = 16px; */
-  font-size: 16px;
 }
 
 

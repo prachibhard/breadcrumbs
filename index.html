@@ -10,6 +10,7 @@
     <title>HTML Skeleton</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:900" rel="stylesheet">
 
     <!-- Your styles should be called here -->
     <link href="main.css" rel="stylesheet"></link>
@@ -24,21 +25,34 @@
 
   <body>
     <!-- YOUR CONTENT GOES HERE -->
-    <header class="section">
-      <h1>Breadcrumbs</h1>
-      <h6>By: Prachi Bhardwaj</h6>
+    <header class="section" id="header">
+      <h1 id="title">Breadcrumbs</h1>
+      <h6 id="byline"><a href="https://prachibhardwaj.com/" target="_blank">By: Prachi Bhardwaj</a></h6>
       <p>Over the centuries, guards, well-fashioned locks, alarms, and security systems, have been a luxury only the wealthy can afford. Today, the disparity is less about breaking and entering, and more about a lack of resources to protect your personally
         identifiable information.
       </p>
       <br>
-      <form>
+      <div class="tableofcontents">
         <h3><a href="#intro">Privacy as a Privilege</a></h3>
-        <h3><a href="#financing">It Costs to be Cautious</h3>
-        <h3><a href="#companies">A Penny for Your Thoughts</h3>
+        <h3><a href="#financing">It Costs to be Cautious</a></h3>
+        <h3><a href="#companies">A Penny for Your Thoughts</a></h3>
         <h3><a href="#nonconsumer">The Indirect Effects</a></h3>
         <h3><a href="#forward">Looking Forward</a></h3>
-      </form>
+      </div>
+      </p>
     </header>
+
+    <div class="nav">
+      <button class="goto">Go To...</button>
+      <div class="dropdown" id="menu">
+        <h3><a href="#header">Home</a></h3>
+        <h3><a href="#intro">Privacy as a Privilege</a></h3>
+        <h3><a href="#financing">It Costs to be Cautious</a></h3>
+        <h3><a href="#companies">A Penny for Your Thoughts</a></h3>
+        <h3><a href="#nonconsumer">The Indirect Effects</a></h3>
+        <h3><a href="#forward">Looking Forward</a></h3>
+      </div>
+    </div>
 
     <div class="section" id="intro">
       <h2>Privacy as a Privilege</h2><br>
@@ -110,6 +124,8 @@
         <input type="radio" name="router" value="medium">ISP Router<br>
         <input type="radio" name="router" value="maximum">WPA/WPA2 Router
       </form>
+
+      <h6 class="backtotop" align="center"><a href="#header">take me home</a></h6>
     </div>
 
     <div class="privacybar">
@@ -134,6 +150,7 @@
         on others, “Another measure that a lot of consumers should take but may not necessarily be taking yet is 2-step-protection for important log ins,” said Zuckerman The “S” in HTTPS stands for secure, so if you’re on a website that isn’t using it,
         use caution. For messaging, Signal has been a successfully free end-to-end encrypted service.</p>
     </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
