@@ -57,7 +57,7 @@ $(document).ready(function () {
 			price = (price + value);
 			percent = percent + rating;
 
-			$(".price").text("$" + price.toFixed(2) + " per year");
+			$(".price").text("$" + price.toFixed(2));
 			$(".totalpercent").width(percent + "%");
 
 			if (percent <= 30) {
