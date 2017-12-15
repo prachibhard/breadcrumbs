@@ -66,16 +66,12 @@ html, body {
 }
 
 .section {
-  margin-top: 15%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 15% 10% 5% 10%;
   padding: 5%;
   min-height: 100vh;
 }
 
 #header {
-  padding-top: 20%;
   text-align: center;
   color: #ffffff;
 }
@@ -234,6 +230,15 @@ form {
   color: #000000;
 }
 
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+li {
+  padding: 1%;
+}
+
 
 /* Tablet/Desktop overrides */
 
@@ -246,7 +251,9 @@ form {
   .section {
     padding: 5%;
     min-height: 100vh;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 2% 20% 10% 20%;
+  }
+  .tableofcontents {
+    margin: 5% 25%;
   }
 }

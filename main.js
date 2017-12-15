@@ -16,6 +16,15 @@ var timer;
 
 $(document).ready(function () {
 
+	$("a[href*='#']").on("click", function (e) {
+		e.preventDefault();
+
+		var target = $($(this).attr("href")),
+			position = target.offset().top;
+
+		$("html, body").animate({ scrollTop: position });
+	});
+
 	$(".goto").on("click", function () {
 		if ($(".dropdown").hasClass("show")) {
 			$(".dropdown").removeClass("show");
@@ -28,7 +37,7 @@ $(document).ready(function () {
 		$(".dropdown").removeClass("show");
 	});
 
-	$(window).on("scroll", function () { //"scroll" is a reserved word that starts something on every pixel
+	$(window).on("scroll", function (e) { //"scroll" is a reserved word that starts something on every pixel
 
 		//Obviously, any previously showing sidebars should be removed prior to showing the new sidebar
 		if (isInView($(".thebar"))) {
