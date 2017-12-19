@@ -66,7 +66,7 @@ html, body {
 }
 
 .section {
-  margin: 15% 10% 5% 10%;
+  margin: 5% 10%;
   padding: 5%;
   min-height: 100vh;
 }
@@ -87,6 +87,10 @@ html, body {
 #byline a {
   color: #3CB371;
   /*mediumseagreen*/
+}
+
+span {
+  font-size: 1.25em;
 }
 
 .tableofcontents {
@@ -114,8 +118,8 @@ html, body {
 /* Dropdown Button */
 
 .goto {
-  width: 30%;
-  background-color: #000000;
+  width: 15%;
+  background-color: #3CB371;
   color: #ffffff;
   padding: 1em;
   float: right;
@@ -239,6 +243,10 @@ li {
   padding: 1%;
 }
 
+.services {
+  text-align: center;
+}
+
 
 /* Tablet/Desktop overrides */
 
@@ -255,5 +263,8 @@ li {
   }
   .tableofcontents {
     margin: 5% 25%;
+  }
+  .goto {
+    width: 25%;
   }
 }
