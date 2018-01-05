@@ -59,47 +59,91 @@ html, body {
   /* Sets default font-size to 16px, ensuring 1em = 16px; */
   font-size: 16px;
   line-height: 1.5;
-  background-color: #708090;
-  /*slategrey*/
-  color: #FFFFFF;
-  font-family: 'Droid Serif', serif;
+  color: #000000;
+  font-family: 'Martel', serif;
+  background-image: url(images/temporary.png);
+  height: 100%;
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.section {
-  margin: 5% 10%;
-  padding: 5%;
-  min-height: 100vh;
-}
+
+/* first slide */
 
 #header {
-  text-align: center;
-  color: #ffffff;
+  padding: 45% 10% 45% 10%;
+  background-color: #ffffff;
+  min-height: 50vh;
 }
 
 #title {
-  text-shadow: 0 0 60px #3CB371, 0 0 60px #000000;
+  font-family: 'VT323', monospace;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 60px #000000, 0 0 60px #000000;
 }
 
-#byline {
-  padding: 5%;
+.headertext {
+  bottom: 10%;
+  position: absolute;
 }
 
-#byline a {
-  color: #3CB371;
-  /*mediumseagreen*/
+#subhead {
+  font-family: 'Cutive Mono', monospace;
 }
 
-span {
-  font-size: 1.25em;
+
+/* other slides, general */
+
+.section {
+  position: relative;
+  padding: 10% 10% 63% 10%;
 }
 
-.tableofcontents {
-  margin: 5%;
-  padding: 1em;
-  border: 3px solid #3CB371;
-  border-radius: 25px;
-  font-size: .9em;
+.white {
+  background-color: #FFFFFF;
+  margin-bottom: 100%;
 }
+
+h3 {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+/* links*/
+
+a:link {
+  text-decoration: none;
+  color: #8099e3
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #8099e3
+}
+
+.arrowdown a {
+  position: absolute;
+  bottom: 0%;
+  right: 50%;
+  color: #000000;
+}
+
+#whitearrow a {
+  color: #ffffff;
+}
+
+
+/* dropdown menu */
 
 .nav {
   width: 60%;
@@ -108,29 +152,26 @@ span {
   position: fixed;
   top: 0;
   right: 0;
-}
-
-.active {
-  display: block;
+  z-index: 3;
 }
 
 
-/* Dropdown Button */
+/* (the button) */
 
 .goto {
   width: 15%;
-  background-color: #3CB371;
+  background-color: #000000;
   color: #ffffff;
   padding: 1em;
   float: right;
 }
 
 
-/* Dropdown Content (Hidden by Default) */
+/* (Hidden by Default) */
 
 .dropdown {
   display: none;
-  background-color: #708090;
+  background-color: #ffffff;
   z-index: 2;
   float: right;
   border: 2px solid #000000;
@@ -148,53 +189,52 @@ span {
 }
 
 
-/*section headlines*/
+/* table of contents specifics */
+
+#intro {
+  height: 60vh;
+}
+
+.card {
+  background-color: #ffffff;
+  margin: 5%;
+  padding: 1em;
+  border: 3px solid #000000;
+  border-radius: 25px;
+  font-size: .9em;
+}
 
 h2 {
-  text-align: center;
-  text-shadow: 0 0 10px #3CB371, 0 0 10px #000000;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+#player {
+  width: 100%;
 }
 
 
-/*section subheads*/
+/* penny for your thoughts specifics */
+
+img {
+  width: 100%;
+}
+
+
+/* it costs to be cautious specifics */
 
 h4 {
-  style: bold;
+  font-weight: bold;
 }
 
-
-/* unvisited link */
-
-a:link {
-  color: #ffffff;
-}
-
-
-/* visited link */
-
-a:visited {
-  color: #3CB371;
-}
-
-
-/* mouse over link */
-
-a:hover {
-  color: #3CB371;
-  text-shadow: 2px 2px 8px #ffffff;
-}
-
-
-/* selected link */
-
-a:active {
-  color: #ffffff;
+.active {
+  display: block;
 }
 
 form {
   margin: 5%;
   padding: 1em;
-  background-color: #3CB371;
+  background-color: #000000;
   color: #ffffff;
   border-radius: 25px;
   font-size: .9em;
@@ -234,6 +274,14 @@ form {
   color: #000000;
 }
 
+
+/* looking forward specifics */
+
+#forward {
+  margin-bottom: 0%;
+  padding-bottom: 20%;
+}
+
 ul {
   list-style-type: square;
   list-style-position: inside;
@@ -244,7 +292,8 @@ li {
 }
 
 .services {
-  text-align: center;
+  background-color: #F5F5F5;
+  padding: 10%;
 }
 
 
@@ -259,10 +308,7 @@ li {
   .section {
     padding: 5%;
     min-height: 100vh;
-    margin: 2% 20% 10% 20%;
-  }
-  .tableofcontents {
-    margin: 5% 25%;
+    margin-bottom: 10%;
   }
   .goto {
     width: 25%;
