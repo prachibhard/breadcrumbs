@@ -61,8 +61,7 @@ html, body {
   line-height: 1.5;
   color: #000000;
   font-family: 'Martel', serif;
-  background-image: url(images/temporary.png);
-  height: 100%;
+  background-image: url(images/lock.png);
   /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -216,7 +215,11 @@ h2 {
 
 /* penny for your thoughts specifics */
 
-img {
+#map {
+  width: 100%;
+}
+
+#facebook {
   width: 100%;
 }
 
@@ -305,11 +308,24 @@ li {
 
 @media(min-width: 729px) {
   /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-  .section {
-    padding: 5%;
-    min-height: 100vh;
-    margin-bottom: 10%;
+  html, body {
+    background-image: url(images/lock.jpg);
+    height: 100%;
   }
+  /* first slide */
+  #header {
+    padding: 12.5%
+  }
+  .headertext {
+    position: absolute;
+  }
+  /* other slides, general */
+  .section {
+    position: relative;
+    padding: 5% 30% 15%;
+  }
+  /* dropdown menu */
+  /* (the button) */
   .goto {
     width: 25%;
   }
