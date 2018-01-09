@@ -75,7 +75,7 @@ html, body {
 #header {
   padding: 45% 10% 45% 10%;
   background-color: #ffffff;
-  min-height: 50vh;
+  height: 50vh;
 }
 
 #title {
@@ -111,6 +111,12 @@ html, body {
 h3 {
   color: #000000;
   font-weight: bold;
+}
+
+.sidebar {
+  background-color: #F5F5F5;
+  padding: 10%;
+  margin: 5% 0%;
 }
 
 
@@ -190,10 +196,6 @@ a:visited {
 
 /* table of contents specifics */
 
-#intro {
-  height: 60vh;
-}
-
 .card {
   background-color: #ffffff;
   margin: 5%;
@@ -219,8 +221,8 @@ h2 {
   width: 100%;
 }
 
-#facebook {
-  width: 100%;
+.facebook {
+  margin: 15%;
 }
 
 
@@ -292,11 +294,6 @@ ul {
 
 li {
   padding: 1%;
-}
-
-.services {
-  background-color: #F5F5F5;
-  padding: 10%;
 }
 
 
