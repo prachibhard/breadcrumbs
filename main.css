@@ -221,8 +221,12 @@ h2 {
   width: 100%;
 }
 
+#facebook {
+  width: 100%;
+}
+
 .facebook {
-  margin: 15%;
+  margin: 2% 10%;
 }
 
 
