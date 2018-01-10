@@ -100,7 +100,7 @@ html, body {
 
 .section {
   position: relative;
-  padding: 10% 10% 63% 10%;
+  padding: 15% 10%;
 }
 
 .white {
@@ -108,9 +108,18 @@ html, body {
   margin-bottom: 100%;
 }
 
+p {
+  margin: 5% 0% 0% 0%;
+}
+
 h3 {
   color: #000000;
   font-weight: bold;
+  margin: 2% 0%;
+}
+
+h4 {
+  margin: 4% 0%;
 }
 
 .sidebar {
@@ -229,6 +238,10 @@ h2 {
   margin: 2% 10%;
 }
 
+figcaption {
+  font-size: .5em;
+}
+
 
 /* it costs to be cautious specifics */
 
@@ -241,7 +254,7 @@ h4 {
 }
 
 form {
-  margin: 5%;
+  margin: 3% 5% 10% 5%;
   padding: 1em;
   background-color: #000000;
   color: #ffffff;
@@ -294,6 +307,7 @@ form {
 ul {
   list-style-type: square;
   list-style-position: inside;
+  margin: 2%;
 }
 
 li {
