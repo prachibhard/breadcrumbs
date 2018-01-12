@@ -124,8 +124,12 @@ h4 {
 
 .sidebar {
   background-color: #F5F5F5;
-  padding: 10%;
-  margin: 5% 0%;
+  padding: 5% 8%;
+  margin: 3% 0%;
+}
+
+.sidebar p {
+  margin: 0%;
 }
 
 
