@@ -61,7 +61,7 @@ html, body {
   line-height: 1.5;
   color: #000000;
   font-family: 'Martel', serif;
-  background-image: url(images/lock.png);
+  background-image: url(images/lockmobile.jpg);
   /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -84,6 +84,7 @@ html, body {
   text-align: center;
   color: #ffffff;
   text-shadow: 0 0 60px #000000, 0 0 60px #000000;
+  font-size: 1.8em;
 }
 
 .headertext {
